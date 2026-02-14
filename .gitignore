@@ -1,0 +1,7 @@
+# Ignorar carpetas de datos
+/dataset/
+/ORL_faces/
+*.jpg
+*.pgm
+*.png
+.DS_Store
