@@ -18,12 +18,12 @@ The system uses the **ORL Face Database**:
 * **Variations:** Includes changes in lighting, facial expressions, and accessories like glasses.
 
 ### 2. Preprocessing
-[cite_start]To balance speed and precision, original images of $92 \times 112$ pixels are resized to a resolution of $20 \times 20$ pixels.
+To balance speed and precision, original images of $92 \times 112$ pixels are resized to a resolution of $20 \times 20$ pixels.
 
 ### 3. Feature Extraction (PCA)
-* [cite_start]Data is centered by subtracting the average image from each sample.
-* [cite_start]Eigenfaces are calculated through the covariance matrix.
-* [cite_start]**50 principal components** are selected for the final projection.
+* Data is centered by subtracting the average image from each sample.
+* Eigenfaces are calculated through the covariance matrix.
+* **50 principal components** are selected for the final projection.
 
 ### 4. Classification (LRC)
 * The test image is projected onto the subspace of training images for each class.
@@ -39,21 +39,21 @@ The system achieved high stability and performance:
 
 ## 🚀 How to Run
 
-1. ##Clone the repository:
+1. **Clone the repository:**
    ```bash
    git clone [https://github.com/gonzaloop1494/facial-recognition-with-PCA.git](https://github.com/gonzaloop1494/facial-recognition-with-PCA.git)
-2. ##Prepare the environment:
+2. **Prepare the environment:**
 
     Open MATLAB.
 
     Ensure the ORL Face Database is in your project directory.
 
-3. ##Execution:
+3. **Execution:**
 
     Run cargarBaseDatosORL.m to load the images.
 
     Run main.m to perform the PCA extraction, LRC classification, and view the accuracy results.
 
-   References
+   **References**
 
     [1] J. Chen and W. K. Jenkins, "Facial recognition with pca and machine learning methods," in 2017 IEEE 60th international Midwest symposium on circuits and systems (MWSCAS).
